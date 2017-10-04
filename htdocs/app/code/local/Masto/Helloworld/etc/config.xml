@@ -27,6 +27,7 @@
                     </args>
                 </gugliotti_helloworld>
             </routers>
+        </frontend>
         <default>
             <masto_helloworld>
                 <configuration>
