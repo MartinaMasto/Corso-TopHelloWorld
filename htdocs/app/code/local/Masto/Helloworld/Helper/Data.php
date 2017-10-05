@@ -3,9 +3,8 @@
  * Hello World...*/
 
 /**
- * Hello World
- * 
- * Main Helper
+ * Hello World Helper Data
+ *
  * @author Martina Masto <martina.masto@thinkopen.it>
  * @package Frontend
  * @version 0.1.0
