@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<layout>
+    <masto_helloworld_index_index>
+        <reference name="root">
+            <action method="setTemplate">
+                <template>page/2columns-left.phtml</template>
+            </action>
+        </reference>
+        <reference name="content">
+            <block type="masto_helloworld/helloworld" name="helloworld.content" template="helloworld/message.phtml"/>
+        </reference>_
+    </masto_helloworld_index_index>
+</layout>
