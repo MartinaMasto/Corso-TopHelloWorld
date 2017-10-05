@@ -1,39 +1,46 @@
 <?xml version="1.0" encoding="utf-8" ?>
-    <config>
-        <modules>
-            <Masto_Helloworld>
-                <version>0.1.0</version>
-            </Masto_Helloworld>
-        </modules>
-        <global>
-            <blocks>
-                <masto_helloworld>
-                    <class>Masto_Helloworld_Blocks</class>
-                </masto_helloworld>
-            </blocks>
-            <helpers>
-                <masto_helloworld>
-                    <class>Masto_Helloworld_Helper</class>
-                </masto_helloworld>
-            </helpers>
-        </global>
-        <frontend>
-            <routers>
-                <gugliotti_helloworld>
-                    <use>standard</use>
-                    <args>
-                        <module>Masto_Helloworld</module>
-                        <frontName>hello</frontName>
-                    </args>
-                </gugliotti_helloworld>
-            </routers>
-        </frontend>
-        <default>
+<config>
+    <modules>
+        <Masto_Helloworld>
+            <version>0.1.0</version>
+        </Masto_Helloworld>
+    </modules>
+    <global>
+        <blocks>
             <masto_helloworld>
-                <configuration>
-                    <enabled>1</enabled>
-                    <message>Test Message from config.xml</message>
-                </configuration>
+                <class>Masto_Helloworld_Blocks</class>
             </masto_helloworld>
-        </default>
-    </config>
+        </blocks>
+        <helpers>
+            <masto_helloworld>
+                <class>Masto_Helloworld_Helper</class>
+            </masto_helloworld>
+        </helpers>
+    </global>
+    <frontend>
+        <routers>
+            <masto_helloworld>
+                <use>standard</use>
+                <args>
+                    <module>Masto_Helloworld</module>
+                    <frontName>hello</frontName>
+                </args>
+            </masto_helloworld>
+        </routers>
+        <layout>
+            <updates>
+                <masto_helloworld>
+                    <file>masto_helloworld.xml</file>
+                </masto_helloworld>
+            </updates>
+        </layout>
+    </frontend>
+    <default>
+        <masto_helloworld>
+            <configuration>
+                <enabled>1</enabled>
+                <message>Test Message from config.xml</message>
+            </configuration>
+        </masto_helloworld>
+    </default>
+</config>
